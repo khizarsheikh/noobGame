@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	overflow: hidden;
+}
+
+#wrapper{
+	width: 1000px;
+	/*border: 1px solid red;*/
+	margin: 10% auto;
+}
+
+
+button{
+	padding: 5px;
+	font-size: 18px;
+	/*position: absolute;*/
+	/*left: 267px;*/
+	/*margin: 10*/
+}
+
+#start{
+	/*position: absolute;
+	left: 267px;
+	top: 119px;*/
+	background: green;
+	color: white;
+	/*margin-right: 10px;*/
+}
+
+#again{
+	/*position: absolute;
+	left: 330px;
+	top: 119px;*/
+	background: green;
+	color: white;	
+}
+
+#game{
+	/*width: 1000px;*/
+	height: 220px;
+	border: 1px solid black;
+	/*margin: 10% auto;*/
+	/*z-index: 10000000;*/
+
+}
+
+#points{
+	/*border: 1px solid red;*/
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	/*display: inline-flex;*/
+}
+
+#score{
+	display: inline-block;
+}
+
+#record{
+	display: inline-block;
+}
+
+#character{
+	/*width: 20px;
+	height: 50px;
+	background: red;*/
+	position: relative;
+	top: 150px;
+	/*z-index: 10;*/
+	/*animation: jump 600ms infinite;*/
+}
+
+#character img{
+	width: 100px;
+	height: 50px;
+}
+
+.animate{
+	animation: jump 500ms;
+}
+
+#block{
+	position: relative;
+	/*z-index: 9;*/
+	top: 87px;
+	left: 960px;
+}
+
+.blockAnimate{
+	animation: block 1.5s infinite linear;
+	
+}
+
+#block img{
+	width: 45px;
+	height: 60px;
+}
+
+#over{
+	background: red;
+	color: pink;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	margin-top: -80px;
+	font-size: 25px;
+	display: none;
+}
+
+#white{
+	background: white;
+	width: 140px;
+	height: 70px;
+	position: relative;
+	right: 143px;
+	top: 18px;
+	/*border: 1px solid red;*/
+}
+
+@keyframes block{
+	0%{left:962px;}
+	100%{left:-140px;}
+}
+
+@keyframes jump{
+	0%{top:150px;}
+	30%{top:90px;}
+	70%{top:90px;}
+	100%{top:150px;}
+}
